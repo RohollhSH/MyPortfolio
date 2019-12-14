@@ -1,0 +1,31 @@
+.side-drawer {
+  height: 70vh;
+  position: fixed;
+  top: 23vh;
+  right: 0;
+  width: 60vw;
+  max-width: 600px;
+  z-index: 200;
+  transform: translateX(+120%);
+  transition: transform .3s ease-out;
+
+  background: #DBC89D 0 0 no-repeat padding-box;
+  box-shadow: -1px 0 5px #E65E5482;
+  border-radius: 20px 0 0 20px;
+  opacity: 1;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.side-drawer.open {
+  transform: translateX(0);
+}
+
+.side-drawer ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

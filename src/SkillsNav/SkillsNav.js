@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import classes from './SkillsNav.module.css';
-import Skill from "./Skill";
+import Skill from "../SkillsDrawer/Skill";
 import Backdrop from "../UI/Backdrop";
 
 class SkillsNav extends Component {
