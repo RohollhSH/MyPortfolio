@@ -1,10 +1,12 @@
 .side-drawer {
-  height: 70vh;
+  /*height: 675px;*/
+  height: 58vh;
   position: fixed;
-  top: 23vh;
+  top: 15vh;
   right: 0;
   width: 60vw;
   max-width: 600px;
+  min-width: 500px;
   z-index: 200;
   transform: translateX(+120%);
   transition: transform .3s ease-out;
@@ -15,6 +17,7 @@
   opacity: 1;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  overflow: auto;
 }
 
 .side-drawer.open {
@@ -22,10 +25,12 @@
 }
 
 .side-drawer ul {
-  height: 100%;
-  list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  list-style: none;
 }
 
+.side-drawer li {
+  flex: 1;
+  margin: 15px 0;
+}

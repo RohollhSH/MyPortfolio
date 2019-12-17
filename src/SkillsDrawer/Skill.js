@@ -14,25 +14,17 @@ const Skill = (props) => {
     case 3:
       SkillBorder.push('ExpertBar');
       break;
+    default:
+      SkillBorder.push('ExpertBar');
+      break;
   }
 
   return (
-    <div style={{
-      // border : '1px solid #1F290D',
-      height: '45px',
-      width: '554.5px',
-      fontSize: '30px',
-    }}>
+    <div className="EachSkill">
       <div className={SkillBorder.join(' ')}/>
-      <div className="ThinBar"/>
-        <p style={{
-          width: '100%',
-          marginTop: '-38px',
-          textAlign: 'center',
-          position: 'absolute',
-        }}>
-          {props.name}
-        </p>
+      <div className="ThinBar">
+        <p>{props.name}</p>
+      </div>
     </div>
   )
 };

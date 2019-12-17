@@ -1,0 +1,9 @@
+.SearchBar {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  top: 100px;
+  right: 200px;
+
+  background-color: #CBD7FF;
+}

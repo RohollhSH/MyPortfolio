@@ -1,10 +1,21 @@
+.EachSkill{
+  position: inherit;
+  display: flex;
+  justify-content: right;
+}
+
+.ThinBar {
+  margin-top: 16px;
+  width: 300px;
+  height: 0;
+  right: 0;
+  border-bottom : 0.5px solid #1F290D;
+}
+
 .BoldBar{
   width: 225px;
   height: 31px;
-  margin: 17px auto auto 0;
   background-color: #1F290D;
-  position: absolute;
-  right: 329.5px;
 }
 
 .BeginnerBar {
@@ -19,11 +30,8 @@
   width: calc(225px * 1);
 }
 
-.ThinBar {
-  width: 356px;
-  height: 0;
-  right: 0;
-  margin-top: 32.5px;
-  border-bottom : 0.5px solid #1F290D;
-  position: absolute;
+.EachSkill p{
+  font-size: 1.5rem;
+  text-align: center;
+  margin: -30px 0 0 0;
 }

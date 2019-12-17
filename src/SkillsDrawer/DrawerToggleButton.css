@@ -1,21 +1,31 @@
 .toggle_button {
-  background: rgba(228, 157, 121, 0.8) 0 0 no-repeat padding-box;
+  background: rgba(228, 157, 121, 0.90) 0 0 no-repeat padding-box;
   border: rgba(170, 165, 255, 0.11) solid 1px;
   border-radius: 20px 0 0 20px;
+  box-shadow:inset -15px 6px 11px -8px rgba(0, 0, 0, 0.29);
   opacity: 1;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 
   position: fixed;
+  top: 280px;
   height: 7vh;
+  min-height: 60px;
   width: 6vw;
+  min-width: 100px;
   right: 0;
   cursor: pointer;
   padding: 0;
 
-  font-family: 'Cascadia Code', 'Open Sans';
-  font-size: 1.362vw;
-  text-shadow: 0 3px 6px #1D1D18CC;
+  font-family: 'Cascadia Code', -apple-system, serif;
+  font-size: 1.3rem;
+
+  transform: translateX(+120%);
+  transition: transform .3s ease-in;
+}
+
+.toggle_button.show {
+  transform: translateX(0);
 }
 
 .toggle_button:focus {
@@ -23,6 +33,7 @@
 }
 
 .toggle_button:hover{
-  color: #fbfdff;
-  background-color: rgb(79, 55, 38);
+  color: #121b4c;
+  background-color: rgb(250, 171, 134);
+  box-shadow: none;
 }

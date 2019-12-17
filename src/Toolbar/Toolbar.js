@@ -1,38 +1,43 @@
 import React from 'react';
-import classes from './Toolbar.module.css';
+import './Toolbar.css';
+import {Link} from "react-router-dom";
 
-const Toolbar = props => (
-  <header className={classes.toolbar}>
-    <nav className={classes.toolbar_navigations}>
-      <div className={classes.toolbar__title}>
-        <p
+const Toolbar = props => {
+
+  return(
+    <header className='toolbar'>
+    <nav className='toolbar_navigations'>
+      <div className='toolbar__title'>
+        <a
+          href='/'
           style={{
             fontWeight: 'bold',
             fontSize: '2.5rem',
-            margin: '0'
+            margin: '0',
           }}
         >
           Rohollah Shahbazi
-        </p>
+        </a>
         <p
           style={{
             fontSize: '1.5rem',
-            marginTop : '15px',
+            marginTop: '15px',
           }}
         >
           Backend / Frontend developer from Iran, Kermanshah
         </p>
       </div>
-      <div className={classes.spacer}/>
-      <div className={classes.toolbar_navigation_items}>
+      <div className='spacer'/>
+      <div className='toolbar_navigation_items'>
         <ul>
-          <li><a href="/">Products</a></li>
-          <li><a href="/">Users</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/my-works">My Work</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact-me">Contact me</Link></li>
         </ul>
       </div>
     </nav>
   </header>
-
-);
+)};
 
 export default Toolbar;
